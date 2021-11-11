@@ -20,12 +20,16 @@ export default function Warning(props) {
 
 const styles = StyleSheet.create({
     warningContainer: {
-        marginTop: 5,
-        marginBottom: 25
+        width: '100%',
+        height: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 15,
+        marginBottom: 15
     },
     warningText: {
-        textAlign: 'center',
+        fontSize: 16,
         color: 'red',
         fontWeight: 'bold'
-    }
+    },
 });

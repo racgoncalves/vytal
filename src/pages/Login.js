@@ -2,16 +2,34 @@ import React, { useState } from 'react';
 import { View, Text, SafeAreaView, Image, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import Warning from '../components/Warning';
 import { getUser } from '../api/getUser';
+import Icon from 'react-native-vector-icons/Fontisto';
+import Button from '../components/Button';
+import CustomInput from '../components/CustomInput';
 
 
 export default function Login({ navigation }) {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [warning, setWarning] = useState(undefined);
+    const [isLoginLoading, setIsLoginLoading] = useState(false);
+
+    Icon.loadFont();
 
     async function handleLogin() {
+
         if (email && password) {
-            const [getUserResponse, getUserContent] = await getUser(email, password);
+            // setIsLoginLoading(true);
+
+            // const getUserContent = await getUser(email, password);
+
+            // if (getUserContent != null) {
+            //     navigation.navigate('Home');
+            //     setIsLoginLoading(false);
+
+            // } else {
+            //     setWarning('Usuário inválido!');
+
+            // }
 
 
         } else {
@@ -23,36 +41,26 @@ export default function Login({ navigation }) {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Image source={require('/Users/victorparisi/Desktop/vytal/public/images/logo.png')} style={styles.logo} />
-            <View style={styles.loginInputsContainer}>
-                <View style={styles.inputContainer}>
-                    <Text style={styles.label}>E-mail de Acesso</Text>
-                    <TextInput style={[styles.input, styles.shadow]} onChangeText={(text) => setEmail(text)} />
+            <View style={styles.topLogoContainer}>
+                <Image source={require('../../public/images/logo.png')} style={styles.logo} />
+            </View>
+            <View style={styles.bottomContainer}>
+                <CustomInput placeholderText="E-mail" handleSetState={setEmail} iconType="email" isPassword={false} />
+                <CustomInput placeholderText="Senha" handleSetState={setPassword} iconType="key" isPassword={true} />
+                <View style={styles.warningContainer}>
+                    {
+                        warning != undefined
+                            ?
+                            <Warning warning={warning} setWarning={setWarning} />
+                            :
+                            null
+                    }
                 </View>
-                <View style={styles.inputContainer}>
-                    <Text style={styles.label}>Senha</Text>
-                    <TextInput style={[styles.input, styles.shadow]} secureTextEntry={true} onChangeText={(text) => setPassword(text)} />
-                </View>
-                {
-                    warning != undefined
-                        ?
-                        <Warning warning={warning} setWarning={setWarning} />
-                        :
-                        null
-                }
-                <View style={[styles.buttonContainer, styles.shadow, styles.continueButton]}>
-                    <TouchableOpacity style={styles.button} onPress={() => handleLogin()}>
-                        <Text style={styles.buttonText}>CONTINUAR</Text>
-                    </TouchableOpacity>
-                </View>
-                <View style={[styles.buttonContainer, styles.shadow, styles.google]}>
-                    <TouchableOpacity style={styles.button}>
-                        <Text style={styles.buttonText}>CONTINUAR COM GMAIL</Text>
-                    </TouchableOpacity>
-                </View>
-                <View style={styles.noAccount}>
-                    <TouchableOpacity onPress={() => navigation.navigate('ChooseAccountType')}>
-                        <Text style={styles.noAccountText}>Não tem conta? Cadastre-se</Text>
+                <Button buttonText={"Login"} handleExecuteFunction={handleLogin} isLoading={isLoginLoading} />
+                <View style={styles.noAccountContainer}>
+                    <Text style={styles.noAccount}>Não tem conta?</Text>
+                    <TouchableOpacity>
+                        <Text style={styles.registerNow} onPress={() => navigation.navigate('ChooseAccountType')}>Cadastre-se agora!</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -63,29 +71,7 @@ export default function Login({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#fff",
-        alignItems: 'center',
-    },
-    logo: {
-        width: 350,
-        resizeMode: 'contain',
-    },
-    loginInputsContainer: {
-        marginBottom: 10,
-    },
-    inputContainer: {
-        marginBottom: 30
-    },
-    label: {
-        marginBottom: 15,
-        fontSize: 15
-    },
-    input: {
-        backgroundColor: 'white',
-        width: 300,
-        height: 45,
-        borderRadius: 5,
-        padding: 10
+        flexDirection: "column"
     },
     shadow: {
         shadowColor: "#000",
@@ -97,33 +83,89 @@ const styles = StyleSheet.create({
         shadowRadius: 2.22,
         elevation: 3,
     },
-    buttonContainer: {
-        borderRadius: 5,
-        height: 50,
-        marginBottom: 30
-    },
-    continueButton: {
-        backgroundColor: '#69c09a'
-    },
-    google: {
-        backgroundColor: '#e23e2f'
-    },
-    button: {
-        flex: 1,
-        justifyContent: "center",
+    topLogoContainer: {
+        backgroundColor: "#F2FCFD",
+        flex: 2.8,
         alignItems: "center",
+    },
+    logo: {
+        flex: 1,
+        width: 350,
+        resizeMode: 'contain'
+    },
+    bottomContainer: {
+        flex: 4,
+        backgroundColor: "#FFF",
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    inputContainer: {
+        width: 350,
+        height: 55,
+        borderRadius: 5,
+        backgroundColor: '#F0F0F0',
+        paddingLeft: 30,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: 15,
+        marginBottom: 15,
+    },
+    warningContainer: {
+        width: '100%',
+        height: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 15,
+        marginBottom: 15
+    },
+    warningText: {
+        fontSize: 16,
+        color: 'red',
         fontWeight: 'bold'
     },
+    input: {
+        paddingTop: 10,
+        paddingRight: 10,
+        paddingBottom: 10,
+        paddingLeft: 0,
+        fontSize: 20,
+    },
+    icon: {
+        color: "#000",
+        padding: 10,
+    },
+    buttonContainer: {
+        width: '100%',
+        marginTop: 10,
+        marginBottom: 60,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    button: {
+        backgroundColor: "#4EB791",
+        height: 60,
+        width: '70%',
+        borderRadius: 28,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
     buttonText: {
+        color: "#fff",
         fontWeight: 'bold',
-        color: 'white',
-        fontSize: 18
+        fontSize: 25
+    },
+    noAccountContainer: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'row'
     },
     noAccount: {
-        alignItems: "center",
+        marginRight: 5,
+        fontSize: 18
     },
-    noAccountText: {
-        fontSize: 15,
+    registerNow: {
         fontWeight: 'bold',
+        color: "#4EB791",
+        fontSize: 18
     },
 });

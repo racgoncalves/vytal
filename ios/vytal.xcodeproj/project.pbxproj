@@ -12,24 +12,8 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CE0D5CA4A771FDF48D375AC6 /* libPods-vytal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 816863FA003D62C6920B34DE /* libPods-vytal.a */; };
-		D030720F65FFABE49DFC79C6 /* libPods-vytal-vytalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B53A113593834D02686585F /* libPods-vytal-vytalTests.a */; };
-		BB5024D8C94D47EF9E17CD14 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1C4FB5AE4B14E8CBD39E33E /* AntDesign.ttf */; };
-		8DE2FCC2C8B2492CAD124732 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9757F8A4777E423C9608B287 /* Entypo.ttf */; };
-		32FD470954784ED7884EF7E6 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B4A6E3E4BDC4D79A4130AD5 /* EvilIcons.ttf */; };
-		925BAE8B361F4EA7A572F2BE /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A55F8199A6F4B9DAB43F7BC /* Feather.ttf */; };
-		ABC5C52D93444D819EA25414 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A61E1188FDAD4C1DB28DC276 /* FontAwesome.ttf */; };
-		0588378E73DA4A6BA057A120 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E9C95247DAA4EFC89B908E3 /* FontAwesome5_Brands.ttf */; };
-		093DEABF29644AC8B33DE378 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE6570BCA7B409EB549E6CE /* FontAwesome5_Regular.ttf */; };
-		610279B6BF1A4C03A9666C73 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C81D19FCD9D6460D9A9E237A /* FontAwesome5_Solid.ttf */; };
-		E00DC2BAE2724628AF39731B /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 686CDC7FEBB441ADBC4D2635 /* Fontisto.ttf */; };
-		4E90836F20BB410EA64CCAC6 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88083E5AE9954C2BA822F191 /* Foundation.ttf */; };
-		A52AE56100404776B8F6E933 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10B7AC87F94E4380B7F55C81 /* Ionicons.ttf */; };
-		48BE2E7B2509408D848472D0 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7A8EC13241D487F82E52A63 /* MaterialCommunityIcons.ttf */; };
-		ADF3664F02D74F49847C0252 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D34128C6FFCB464EA2CE2262 /* MaterialIcons.ttf */; };
-		F31AB85018AC478588680314 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1272653657645BB84B642E1 /* Octicons.ttf */; };
-		541611B16E984DC7BCE00B46 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA8EEFA723FE4400AA4ACF93 /* SimpleLineIcons.ttf */; };
-		65E39BE1E56F4025B256D70E /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDDB7A81485146C28F44B4C8 /* Zocial.ttf */; };
+		97E78661EE5CEDD8698F1659 /* libPods-vytal-vytalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D83A8DF7BAD4B1BB9E1B02C /* libPods-vytal-vytalTests.a */; };
+		AF7599B35601738853EF4461 /* libPods-vytal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FE9344F24213E937A5992D /* libPods-vytal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,30 +36,14 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = vytal/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = vytal/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = vytal/main.m; sourceTree = "<group>"; };
-		1D3BFE5B2539B07221BCEED3 /* Pods-vytal-vytalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vytal-vytalTests.debug.xcconfig"; path = "Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6C47B819F349B9927F9FA5C7 /* Pods-vytal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vytal.debug.xcconfig"; path = "Target Support Files/Pods-vytal/Pods-vytal.debug.xcconfig"; sourceTree = "<group>"; };
-		6C4AA38A209C4D4B4EB8500B /* Pods-vytal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vytal.release.xcconfig"; path = "Target Support Files/Pods-vytal/Pods-vytal.release.xcconfig"; sourceTree = "<group>"; };
-		816863FA003D62C6920B34DE /* libPods-vytal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vytal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		239ACF64EBDA93DB87873D09 /* Pods-vytal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vytal.debug.xcconfig"; path = "Target Support Files/Pods-vytal/Pods-vytal.debug.xcconfig"; sourceTree = "<group>"; };
+		2EB5EF1B4B839EBE38CC0AB4 /* Pods-vytal-vytalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vytal-vytalTests.debug.xcconfig"; path = "Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C2A9C4E797C457CB57A4F88 /* Pods-vytal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vytal.release.xcconfig"; path = "Target Support Files/Pods-vytal/Pods-vytal.release.xcconfig"; sourceTree = "<group>"; };
+		43FE9344F24213E937A5992D /* libPods-vytal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vytal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = vytal/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9B53A113593834D02686585F /* libPods-vytal-vytalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vytal-vytalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4610DF848F7B2FE19C0F5DA /* Pods-vytal-vytalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vytal-vytalTests.release.xcconfig"; path = "Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D83A8DF7BAD4B1BB9E1B02C /* libPods-vytal-vytalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vytal-vytalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8FF7CA73ECC1F413A6E060D /* Pods-vytal-vytalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vytal-vytalTests.release.xcconfig"; path = "Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		A1C4FB5AE4B14E8CBD39E33E /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9757F8A4777E423C9608B287 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6B4A6E3E4BDC4D79A4130AD5 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0A55F8199A6F4B9DAB43F7BC /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A61E1188FDAD4C1DB28DC276 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0E9C95247DAA4EFC89B908E3 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DCE6570BCA7B409EB549E6CE /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C81D19FCD9D6460D9A9E237A /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		686CDC7FEBB441ADBC4D2635 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		88083E5AE9954C2BA822F191 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		10B7AC87F94E4380B7F55C81 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A7A8EC13241D487F82E52A63 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D34128C6FFCB464EA2CE2262 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C1272653657645BB84B642E1 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AA8EEFA723FE4400AA4ACF93 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CDDB7A81485146C28F44B4C8 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D030720F65FFABE49DFC79C6 /* libPods-vytal-vytalTests.a in Frameworks */,
+				97E78661EE5CEDD8698F1659 /* libPods-vytal-vytalTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0D5CA4A771FDF48D375AC6 /* libPods-vytal.a in Frameworks */,
+				AF7599B35601738853EF4461 /* libPods-vytal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,13 +96,13 @@
 			name = vytal;
 			sourceTree = "<group>";
 		};
-		228D3854BAF4E1B3ADC0289D /* Pods */ = {
+		18B6600A37485998146062AB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6C47B819F349B9927F9FA5C7 /* Pods-vytal.debug.xcconfig */,
-				6C4AA38A209C4D4B4EB8500B /* Pods-vytal.release.xcconfig */,
-				1D3BFE5B2539B07221BCEED3 /* Pods-vytal-vytalTests.debug.xcconfig */,
-				D4610DF848F7B2FE19C0F5DA /* Pods-vytal-vytalTests.release.xcconfig */,
+				239ACF64EBDA93DB87873D09 /* Pods-vytal.debug.xcconfig */,
+				3C2A9C4E797C457CB57A4F88 /* Pods-vytal.release.xcconfig */,
+				2EB5EF1B4B839EBE38CC0AB4 /* Pods-vytal-vytalTests.debug.xcconfig */,
+				A8FF7CA73ECC1F413A6E060D /* Pods-vytal-vytalTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -144,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				816863FA003D62C6920B34DE /* libPods-vytal.a */,
-				9B53A113593834D02686585F /* libPods-vytal-vytalTests.a */,
+				43FE9344F24213E937A5992D /* libPods-vytal.a */,
+				8D83A8DF7BAD4B1BB9E1B02C /* libPods-vytal-vytalTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,8 +133,8 @@
 				00E356EF1AD99517003FC87E /* vytalTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				228D3854BAF4E1B3ADC0289D /* Pods */,
-				33E63DBFF6104B05B557459D /* Resources */,
+				18B6600A37485998146062AB /* Pods */,
+				8070B305C827419FAD7A5545 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -182,25 +150,9 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		33E63DBFF6104B05B557459D /* Resources */ = {
+		8070B305C827419FAD7A5545 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				A1C4FB5AE4B14E8CBD39E33E /* AntDesign.ttf */,
-				9757F8A4777E423C9608B287 /* Entypo.ttf */,
-				6B4A6E3E4BDC4D79A4130AD5 /* EvilIcons.ttf */,
-				0A55F8199A6F4B9DAB43F7BC /* Feather.ttf */,
-				A61E1188FDAD4C1DB28DC276 /* FontAwesome.ttf */,
-				0E9C95247DAA4EFC89B908E3 /* FontAwesome5_Brands.ttf */,
-				DCE6570BCA7B409EB549E6CE /* FontAwesome5_Regular.ttf */,
-				C81D19FCD9D6460D9A9E237A /* FontAwesome5_Solid.ttf */,
-				686CDC7FEBB441ADBC4D2635 /* Fontisto.ttf */,
-				88083E5AE9954C2BA822F191 /* Foundation.ttf */,
-				10B7AC87F94E4380B7F55C81 /* Ionicons.ttf */,
-				A7A8EC13241D487F82E52A63 /* MaterialCommunityIcons.ttf */,
-				D34128C6FFCB464EA2CE2262 /* MaterialIcons.ttf */,
-				C1272653657645BB84B642E1 /* Octicons.ttf */,
-				AA8EEFA723FE4400AA4ACF93 /* SimpleLineIcons.ttf */,
-				CDDB7A81485146C28F44B4C8 /* Zocial.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -213,12 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "vytalTests" */;
 			buildPhases = (
-				2F560808C7E93A300F2ED5CB /* [CP] Check Pods Manifest.lock */,
+				279D6A799D99D462B5A4C0D2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				D35187B2BF35953DB9DFEDDB /* [CP] Embed Pods Frameworks */,
-				AC61EBAF71A77A8375148D87 /* [CP] Copy Pods Resources */,
+				9844DC4F0A699FDEB749C764 /* [CP] Embed Pods Frameworks */,
+				A475D4647C99F1AC24175C92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,14 +186,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "vytal" */;
 			buildPhases = (
-				D7A9F85DDC89F2B6C3A6BF05 /* [CP] Check Pods Manifest.lock */,
+				5B222462640C09EA7B7875DF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				E9BA6E94C2CF892B9C2D6500 /* [CP] Embed Pods Frameworks */,
-				498D4DE6951F7347702CB165 /* [CP] Copy Pods Resources */,
+				FA31E0F960D3B7F65B58CFAB /* [CP] Embed Pods Frameworks */,
+				A749335BB554B5ED50B21DBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,22 +254,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				BB5024D8C94D47EF9E17CD14 /* AntDesign.ttf in Resources */,
-				8DE2FCC2C8B2492CAD124732 /* Entypo.ttf in Resources */,
-				32FD470954784ED7884EF7E6 /* EvilIcons.ttf in Resources */,
-				925BAE8B361F4EA7A572F2BE /* Feather.ttf in Resources */,
-				ABC5C52D93444D819EA25414 /* FontAwesome.ttf in Resources */,
-				0588378E73DA4A6BA057A120 /* FontAwesome5_Brands.ttf in Resources */,
-				093DEABF29644AC8B33DE378 /* FontAwesome5_Regular.ttf in Resources */,
-				610279B6BF1A4C03A9666C73 /* FontAwesome5_Solid.ttf in Resources */,
-				E00DC2BAE2724628AF39731B /* Fontisto.ttf in Resources */,
-				4E90836F20BB410EA64CCAC6 /* Foundation.ttf in Resources */,
-				A52AE56100404776B8F6E933 /* Ionicons.ttf in Resources */,
-				48BE2E7B2509408D848472D0 /* MaterialCommunityIcons.ttf in Resources */,
-				ADF3664F02D74F49847C0252 /* MaterialIcons.ttf in Resources */,
-				F31AB85018AC478588680314 /* Octicons.ttf in Resources */,
-				541611B16E984DC7BCE00B46 /* SimpleLineIcons.ttf in Resources */,
-				65E39BE1E56F4025B256D70E /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +274,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		2F560808C7E93A300F2ED5CB /* [CP] Check Pods Manifest.lock */ = {
+		279D6A799D99D462B5A4C0D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,58 +296,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		498D4DE6951F7347702CB165 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vytal/Pods-vytal-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vytal/Pods-vytal-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vytal/Pods-vytal-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC61EBAF71A77A8375148D87 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D35187B2BF35953DB9DFEDDB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D7A9F85DDC89F2B6C3A6BF05 /* [CP] Check Pods Manifest.lock */ = {
+		5B222462640C09EA7B7875DF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -433,7 +318,58 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E9BA6E94C2CF892B9C2D6500 /* [CP] Embed Pods Frameworks */ = {
+		9844DC4F0A699FDEB749C764 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A475D4647C99F1AC24175C92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vytal-vytalTests/Pods-vytal-vytalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A749335BB554B5ED50B21DBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vytal/Pods-vytal-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vytal/Pods-vytal-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vytal/Pods-vytal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA31E0F960D3B7F65B58CFAB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -502,7 +438,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D3BFE5B2539B07221BCEED3 /* Pods-vytal-vytalTests.debug.xcconfig */;
+			baseConfigurationReference = 2EB5EF1B4B839EBE38CC0AB4 /* Pods-vytal-vytalTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -529,7 +465,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4610DF848F7B2FE19C0F5DA /* Pods-vytal-vytalTests.release.xcconfig */;
+			baseConfigurationReference = A8FF7CA73ECC1F413A6E060D /* Pods-vytal-vytalTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -553,7 +489,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C47B819F349B9927F9FA5C7 /* Pods-vytal.debug.xcconfig */;
+			baseConfigurationReference = 239ACF64EBDA93DB87873D09 /* Pods-vytal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -579,7 +515,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C4AA38A209C4D4B4EB8500B /* Pods-vytal.release.xcconfig */;
+			baseConfigurationReference = 3C2A9C4E797C457CB57A4F88 /* Pods-vytal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

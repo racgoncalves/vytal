@@ -1,23 +1,27 @@
 import React from 'react';
 import { View, Text, SafeAreaView, Image, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import CustomHeader from '../components/CustomHeader';
 
 export default function ChooseAccountType({ navigation }) {
     Icon.loadFont();
 
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.mainTextContainer}>
-                <Text styles={styles.title}>Qual será o seu tipo de conta?</Text>
+            <CustomHeader navigation={navigation} pageRedirect="Login" headerText="Qual é o seu tipo de conta?" />
+            <View style={styles.mainContent}>
+                <View style={styles.logoContainer}>
+                    <Image source={require('../../public/images/logoSmall.png')} style={styles.logo} />
+                </View>
+                <TouchableOpacity style={[styles.optionContainer, styles.shadow]} onPress={() => navigation.navigate('Registration', { 'type': 'market' })}>
+                    <Text style={styles.optionText}>Eu gostaria de doar</Text>
+                    <Icon name="shopping-cart" size={30} style={styles.iconOption} />
+                </TouchableOpacity>
+                <TouchableOpacity style={[styles.optionContainer, styles.shadow]} onPress={() => navigation.navigate('Registration', { 'type': 'user' })}>
+                    <Text style={styles.optionText}>Eu gostaria de receber doações</Text>
+                    <Icon name="user" size={30} style={styles.iconOption} />
+                </TouchableOpacity>
             </View>
-            <TouchableOpacity style={[styles.card, styles.shadow]} onPress={() => navigation.navigate('RegisterMarket')}>
-                <Icon name="shopping-cart" size={100} color="#999" />
-                <Text>Mercado</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={[styles.card, styles.shadow]} onPress={() => navigation.navigate('RegisterUser')}>
-                <Icon name="user" size={100} color="#999" />
-                <Text>Pessoa</Text>
-            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -25,35 +29,57 @@ export default function ChooseAccountType({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#fff",
-        alignItems: 'center',
-        justifyContent: 'center',
+        flexDirection: "column",
     },
-    mainTextContainer: {
-        marginTop: 30,
-        marginBottom: 30,
+    icon: {
+        color: "#FFF",
+        padding: 10,
+        position: 'absolute',
+        top: -25,
+        right: 20
     },
-    title: {
-        color: 'red'
+    iconOption: {
+        color: "#000",
+        fontSize: 150
     },
-    card: {
-        backgroundColor: 'white',
-        width: 300,
-        height: 200,
-        marginBottom: 50,
-        borderRadius: 5,
+    mainContent: {
+        backgroundColor: "#F2FCFD",
         flex: 1,
-        justifyContent: "center",
         alignItems: "center",
+        justifyContent: "center"
+    },
+    logoContainer: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: 20
+    },
+    logo: {
+        flex: 1,
+        width: 120,
+        resizeMode: 'contain'
+    },
+    optionContainer: {
+        flex: 2,
+        backgroundColor: "#fff",
+        marginTop: 25,
+        borderRadius: 10,
+        width: 300,
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    optionText: {
+        fontSize: 15,
+        marginBottom: 20
     },
     shadow: {
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
-            height: 5,
+            height: 1,
         },
-        shadowOpacity: 0.34,
-        shadowRadius: 6.27,
-        elevation: 10,
+        shadowOpacity: 0.22,
+        shadowRadius: 2.22,
+        elevation: 3,
     },
 });
