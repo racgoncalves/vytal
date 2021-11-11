@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { View, Text, SafeAreaView, Image, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import Warning from '../components/Warning';
-import { getUser } from '../api/getUser';
+import { getLogin } from '../api/getLogin';
 import Icon from 'react-native-vector-icons/Fontisto';
 import Button from '../components/Button';
 import CustomInput from '../components/CustomInput';
 
 
-export default function Login({ navigation }) {
+export default function Login({ route, navigation }) {
+    const isMarket = route.params.type == 'market' ? true : false;
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [warning, setWarning] = useState(undefined);
@@ -18,18 +19,22 @@ export default function Login({ navigation }) {
     async function handleLogin() {
 
         if (email && password) {
-            // setIsLoginLoading(true);
+            setIsLoginLoading(true);
+            const loginContent = await getLogin(email, password, isMarket ? 'mercado' : 'usuario');
+  
+            if (loginContent != 404) {
+                if (isMarket){
+                    navigation.navigate('Products',{'marketObject':loginContent});
+                } else {
+                    navigation.navigate('Home');
+                }
+                
+                setIsLoginLoading(false);
 
-            // const getUserContent = await getUser(email, password);
+            } else {
+                setWarning('Usuário inválido!');
 
-            // if (getUserContent != null) {
-            //     navigation.navigate('Home');
-            //     setIsLoginLoading(false);
-
-            // } else {
-            //     setWarning('Usuário inválido!');
-
-            // }
+            }
 
 
         } else {

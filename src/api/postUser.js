@@ -1,7 +1,7 @@
 export const postUser = async (marketObject) => {
     try {
         const res = await fetch(
-            'https://ec2-54-233-173-244.sa-east-1.compute.amazonaws.com:8083/usuario',
+            'http://ec2-54-233-173-244.sa-east-1.compute.amazonaws.com:8083/usuario',
             {
                 body: JSON.stringify(marketObject),
                 headers: {

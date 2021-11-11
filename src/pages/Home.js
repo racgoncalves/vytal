@@ -8,7 +8,7 @@ import SmallLoading from '../components/SmallLoading';
 
 
 export default function Home({ navigation }) {
-    // const [markets, setMarkets] = useState([]);
+    const [markets, setMarkets] = useState([]);
 
     useEffect(() => {
         if (typeof window != undefined) {
@@ -18,29 +18,11 @@ export default function Home({ navigation }) {
 
             }
 
-            // getMarketsItems();
+            getMarketsItems();
 
         }
 
     }, []);
-
-    const markets = [
-        {
-            "id": null,
-            "name": "Mercado teste",
-            "email": "teste-mercado@teste.com",
-            "password": "123",
-            "role": "admin",
-            "address": "Rua teste",
-            "number": "1A",
-            "city": "São Paulo",
-            "state": "SP",
-            "zipcode": "18603-555",
-            "donating": true,
-            "picture": "https://content.paodeacucar.com/wp-content/uploads/2019/06/8-dicas-%C3%BAteis-2.jpg",
-            "lastUpdated": null
-        }
-    ];
 
     return (
         <SafeAreaView style={styles.container}>

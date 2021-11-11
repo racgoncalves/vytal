@@ -1,7 +1,7 @@
 export const postMarket = async (marketObject) => {
     try {
         const res = await fetch(
-            'https://ec2-54-233-173-244.sa-east-1.compute.amazonaws.com:8083/mercado',
+            'http://ec2-54-233-173-244.sa-east-1.compute.amazonaws.com:8083/mercado',
             {
                 body: JSON.stringify(marketObject),
                 headers: {
@@ -15,6 +15,7 @@ export const postMarket = async (marketObject) => {
         return result;
 
     } catch (error) {
+        // console.warn(res);
         console.error(error);
     }
 

@@ -6,9 +6,12 @@ import CustomCard from '../components/CustomCard';
 import { getMarkets } from '../api/getMarkets';
 import SmallLoading from '../components/SmallLoading';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { getProducts } from '../api/getProducts';
 
 
-export default function Products({ navigation }) {
+export default function Products({ route, navigation }) {
+    const marketObject = route.params.marketObject;
+
     Icon.loadFont();
 
     const [products, setProducts] = useState([]);
@@ -16,12 +19,12 @@ export default function Products({ navigation }) {
     useEffect(() => {
         if (typeof window != undefined) {
             async function getProductsItems() {
-                const getProductsContent = await getProducts(marketObject.mercadoId);
+                const getProductsContent = await getProducts(marketObject.id);
                 setProducts(getProductsContent);
 
             }
 
-            // getProductsItems();
+            getProductsItems();
 
         }
 
@@ -38,7 +41,7 @@ export default function Products({ navigation }) {
                 </View>
                 <View style={styles.productsContent}>
                     {
-                        products != undefined && products.length > 0
+                        products != undefined && products.length >= 0
                             ?
                             <FlatList
                                 data={products}
@@ -47,13 +50,13 @@ export default function Products({ navigation }) {
                                         <View style={[styles.productsCard, styles.shadow]}>
                                             <View style={styles.productInfo}>
                                                 <View>
-                                                    <Text>Nome do produto: <Text style={styles.textBold}>Iogurte</Text></Text>
+                                                    <Text>Nome do produto: <Text style={styles.textBold}>{item.name}</Text></Text>
                                                 </View>
                                                 <View>
-                                                    <Text>Marca: <Text style={styles.textBold}>Iogurte</Text></Text>
+                                                    <Text>Marca: <Text style={styles.textBold}>{item.brand}</Text></Text>
                                                 </View>
                                                 <View>
-                                                    <Text>Localização: <Text style={styles.textBold}>Iogurte</Text></Text>
+                                                    <Text>Localização: <Text style={styles.textBold}>{item.location}</Text></Text>
                                                 </View>
                                             </View>
                                             <View style={styles.iconsContainer}>

@@ -31,19 +31,20 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
         paddingLeft: 0,
         fontSize: 20,
+        width: '80%',
     },
     icon: {
         color: "#000",
         padding: 10,
     },
     shadow: {
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.22,
-        shadowRadius: 2.22,
-        elevation: 3,
+        // shadowColor: "#000",
+        // shadowOffset: {
+        //     width: 0,
+        //     height: 1,
+        // },
+        // shadowOpacity: 0.22,
+        // shadowRadius: 2.22,
+        // elevation: 3,
     },
 });

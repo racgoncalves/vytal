@@ -8,6 +8,7 @@ import Home from './src/pages/Home';
 import Registration from './src/pages/Registration';
 import Market from './src/pages/Market';
 import Products from './src/pages/Products';
+import ChooseLogin from './src/pages/ChooseLogin';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ export default function App() {
       <Stack.Navigator screenOptions={{
         headerShown: false
       }}>
+        <Stack.Screen name="ChooseLogin" component={ChooseLogin} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="ChooseAccountType" component={ChooseAccountType} />
         <Stack.Screen name="Registration" component={Registration} />

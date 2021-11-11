@@ -1,7 +1,7 @@
 export const getMarkets = async () => {
     try {
         const res = await fetch(
-            'https://ec2-54-233-173-244.sa-east-1.compute.amazonaws.com:8083/mercado',
+            'http://ec2-54-233-173-244.sa-east-1.compute.amazonaws.com:8083/mercado',
             {
                 headers: {
                     'Content-Type': 'application/json',

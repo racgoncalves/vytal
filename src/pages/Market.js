@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, SafeAreaView, Image, StyleSheet, TextInput, TouchableOpacity, FlatList } from 'react-native';
+import { View, Text, SafeAreaView, Image, StyleSheet, TextInput, TouchableOpacity, FlatList, RefreshControl } from 'react-native';
 import CustomHeader from '../components/CustomHeader';
 import { getProducts } from '../api/getProducts';
 import SmallLoading from '../components/SmallLoading';
@@ -8,16 +8,28 @@ import SmallLoading from '../components/SmallLoading';
 export default function Market({ route, navigation }) {
     const marketObject = route.params.marketObject;
     const [products, setProducts] = useState([]);
+    const [refreshing, setRefreshing] = React.useState(false);
+ 
+    const onRefresh = React.useCallback(() => {
+        setRefreshing(true);
+        wait(2000).then(() => setRefreshing(false));
+    }, []);
 
     useEffect(() => {
         if (typeof window != undefined) {
             async function getProductsItems() {
-                const getProductsContent = await getProducts(marketObject.mercadoId);
-                setProducts(getProductsContent);
+                const getProductsContent = await getProducts(marketObject.id);
+
+                if (getProductsContent.status == 404){
+                    setProducts([]);
+                } else{
+                    setProducts(getProductsContent);
+                }
+                
 
             }
 
-            // getProductsItems();
+            getProductsItems();
 
         }
 
@@ -40,14 +52,21 @@ export default function Market({ route, navigation }) {
                     </View>
                     <View style={styles.productsList}>
                         {
-                            products != undefined && products.length > 0
+                            products != undefined && products.length >= 0
                                 ?
                                 <FlatList
+                                    refreshControl={
+                                        <RefreshControl
+                                            refreshing={refreshing}
+                                            onRefresh={onRefresh}
+                                        />
+                                    }
                                     style={styles.list}
                                     data={products}
                                     renderItem={({ item }) => {
                                         return (
                                             <View style={[styles.productRow, styles.shadow]}>
+                                                {/* adicionar brand */}
                                                 <Text>Nome: <Text style={styles.productName}>{item.name}</Text></Text>
                                                 <Text>Local: <Text style={styles.productName}>{item.location}</Text></Text>
                                             </View>
